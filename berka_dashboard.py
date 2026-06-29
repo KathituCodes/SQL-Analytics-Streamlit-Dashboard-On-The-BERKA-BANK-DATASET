@@ -253,8 +253,8 @@ with st.sidebar:
 # ─────────────────────────────────────────────────────────────
 st.markdown('<div class="section-header">Loan Amount vs Last Transaction Amount</div>',
                 unsafe_allow_html=True)
-fig3 = go.Figure()
-for status, symbol, label in [
+    fig3 = go.Figure()
+    for status, symbol, label in [
         ("D", "diamond", "Status D: Running, In Trouble"),
         ("B", "circle",  "Status B: Finished, Unpaid")
     ]:
@@ -287,7 +287,6 @@ for status, symbol, label in [
                     bordercolor="#E0E0E0", borderwidth=1)
     ))
     st.plotly_chart(fig3, use_container_width=True)
-
 
 # ─────────────────────────────────────────────────────────────
 # PAGE: OVERVIEW
